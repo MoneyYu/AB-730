@@ -52,6 +52,29 @@ Post Course Survey: [https://aka.ms/gh900survey](https://aka.ms/gh900survey)
 ### Security
 [About GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
 
+[About code scanning with CodeQL](https://docs.github.com/en/code-security/concepts/code-scanning/codeql/about-code-scanning-with-codeql)
+
+[About secret scanning](https://docs.github.com/en/code-security/concepts/secret-security/about-secret-scanning)
+
+[Supported secret scanning patterns](https://docs.github.com/en/code-security/secret-scanning/introduction/supported-secret-scanning-patterns)
+
+[About supply chain security](https://docs.github.com/en/code-security/concepts/supply-chain-security/about-supply-chain-security)
+
+[Open source license comparsion](https://choosealicense.com/licenses/)
+
+[About code owners](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)
+
+[GitHub Packages](https://docs.github.com/en/packages)
+
+### GitHub Markdown
+[Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+[Organizing information with tables](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+
+[Creating and highlighting code blocks](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
+
+[Creating diagrams](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams)
+
 <!--
 ### Introduction to Git
 [What is version control?](https://learn.microsoft.com/en-us/devops/develop/git/what-is-version-control)
@@ -106,6 +129,7 @@ Post Course Survey: [https://aka.ms/gh900survey](https://aka.ms/gh900survey)
 [Microsoft Exam FAQ](https://docs.microsoft.com/en-us/learn/certifications/online-exams)
 [Renew your Microsoft Certifications for free. Stay Microsoft Certified!](https://aka.ms/RenewYourCertVideo)
 [Microsoft Learn for all role-based Microsoft Certification exams](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/introducing-a-new-resource-for-all-role-based-microsoft/ba-p/3500870?WT.mc_id=general_Twitter-wwl)
+<!--[](https://aka.ms/LxPExamDiscountVideo)-->
 
 
 ![exam](https://mdcontent.yu.money/contents/31b5b0d6ee886b9be732c5f03.png)
