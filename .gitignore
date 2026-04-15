@@ -67,7 +67,3 @@ TestResult*/
 # OS-specific
 .DS_Store
 Thumbs.db
-
-# DEMO generated outputs (keep source scripts and markdown files tracked)
-DEMO/**/*.docx
-DEMO/**/*.xlsx
