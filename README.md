@@ -72,6 +72,7 @@ Post Course Survey: [https://aka.ms/ab730survey](https://aka.ms/ab730survey)
 [Microsoft Exam FAQ](https://docs.microsoft.com/en-us/learn/certifications/online-exams)
 [Renew your Microsoft Certifications for free. Stay Microsoft Certified!](https://aka.ms/RenewYourCertVideo)
 [Microsoft Learn for all role-based Microsoft Certification exams](https://techcommunity.microsoft.com/t5/microsoft-learn-blog/introducing-a-new-resource-for-all-role-based-microsoft/ba-p/3500870?WT.mc_id=general_Twitter-wwl)
+<!--[](https://aka.ms/LxPExamDiscountVideo)-->
 
 ![exam](https://mdcontent.yu.money/contents/31b5b0d6ee886b9be732c5f03.png)
 
