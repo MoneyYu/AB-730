@@ -114,6 +114,13 @@ Post Course Survey: [https://aka.ms/ab730survey](https://aka.ms/ab730survey)
 ## Videos
 | Module | Name | Link |
 | --- | --- | --- |
+| M02 | Getting started with the Microsoft 365 Copilot app: A guided tour | [Watch](https://youtu.be/ZKjU6UTh8lA) |
+| M04 | Microsoft 365 Copilot Pages: Turn chat responses into editable, shareable content | [Watch](https://youtu.be/ci3_7u-zlvU) |
+| M05 | Researcher Agent in Microsoft 365 Copilot: Generate structured, source cited reports | [Watch](https://youtu.be/d1ngR1TmPAo) |
+| M05 | Create in Microsoft 365 Copilot: Turn ideas into branded visuals | [Watch](https://youtu.be/WYOXy4AuXIM) |
+| M07 | Missed a meeting? Learn how to catch up with Microsoft 365 Copilot | [Watch](https://youtu.be/xvKY-B6LhSk) |
+| M07 | Run more focused meetings with Facilitator Agent in Microsoft Teams | [Watch](https://youtu.be/FAMn1KH_V8c) |
+| M07 | Microsoft 365 Copilot Notebooks: Organize project materials and get insights | [Watch](https://youtu.be/LzOahTl6MF0) |
 | M08 | Meet Copilot Cowork: A New Way of Getting Work Done | [Watch](https://youtu.be/j8rHJsM3fxQ) |
 | M08 | Organize your week with Copilot Cowork | [Watch](https://youtu.be/BL95ZlP8cgY) |
 | M08 | Plan a product launch workflow with Copilot Cowork | [Watch](https://youtu.be/9uRuf7nB4cg) |
