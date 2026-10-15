@@ -1,0 +1,48 @@
+{
+  "targetFolder": "AB730-Automotive-20261015",
+  "uploadToRole": "Admin",
+  "files": [
+    {
+      "localName": "01-BOM-Cost.xlsx",
+      "sha256": "a81c708ccda16a5b04bb256716454005f31ac11bbb493ec66eae9ecb1986961b"
+    },
+    {
+      "localName": "02-Supplier-Delivery.xlsx",
+      "sha256": "f1498eba6d4bc67767e14cc2ebb2ed6f9d983947b1b7d5e87616c1182efbfd3a"
+    },
+    {
+      "localName": "03-Quality-Inspection.xlsx",
+      "sha256": "4d2d63ca592e0b085d3f69ad567377a5e477d6c18df5e28d42909d9719d40eb5"
+    },
+    {
+      "localName": "04-Production-Impact.xlsx",
+      "sha256": "c32a480f081d1148b5a4973d340e77ee7d82b04091a15364f3ace38dc24b16c2"
+    },
+    {
+      "localName": "05-Action-Tracker.xlsx",
+      "sha256": "2c9863d6c501e511d56ac1b75989b2624aa749aa808b519e78fe3874076a6529"
+    },
+    {
+      "localName": "06-Quality-Brief.docx",
+      "sha256": "7a8bd5a857b9200510ced8380192173a88a689dda0a273de85458e3c65a6b904"
+    },
+    {
+      "localName": "07-Supplier-Response.docx",
+      "sha256": "ec18b883397835f6ac3509a6b56c393b4f8ab76d044d72ca5970e60927d9ab5c"
+    },
+    {
+      "localName": "08-Improvement-Meeting.docx",
+      "sha256": "cffbb1716fd3a2b306e37fb04d79ebe72ba5b90ac998a1054094047824ae3ca7"
+    }
+  ],
+  "assetSHA256": {
+    "01-BOM-Cost.xlsx": "a81c708ccda16a5b04bb256716454005f31ac11bbb493ec66eae9ecb1986961b",
+    "02-Supplier-Delivery.xlsx": "f1498eba6d4bc67767e14cc2ebb2ed6f9d983947b1b7d5e87616c1182efbfd3a",
+    "03-Quality-Inspection.xlsx": "4d2d63ca592e0b085d3f69ad567377a5e477d6c18df5e28d42909d9719d40eb5",
+    "04-Production-Impact.xlsx": "c32a480f081d1148b5a4973d340e77ee7d82b04091a15364f3ace38dc24b16c2",
+    "05-Action-Tracker.xlsx": "2c9863d6c501e511d56ac1b75989b2624aa749aa808b519e78fe3874076a6529",
+    "06-Quality-Brief.docx": "7a8bd5a857b9200510ced8380192173a88a689dda0a273de85458e3c65a6b904",
+    "07-Supplier-Response.docx": "ec18b883397835f6ac3509a6b56c393b4f8ab76d044d72ca5970e60927d9ab5c",
+    "08-Improvement-Meeting.docx": "cffbb1716fd3a2b306e37fb04d79ebe72ba5b90ac998a1054094047824ae3ca7"
+  }
+}

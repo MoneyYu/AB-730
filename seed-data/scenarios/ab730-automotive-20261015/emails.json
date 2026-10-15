@@ -1,0 +1,230 @@
+{
+  "emailThreads": [
+    {
+      "threadName": "T-01 【AB-730 20261015 Automotive】供应商交期与缺料风险",
+      "emails": [
+        {
+          "action": "send",
+          "fromRole": "Supply",
+          "toRoles": [
+            "Operations",
+            "Planner"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "【AB-730 20261015 Automotive】供应商交期与缺料风险",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Supply | 关联数据：deliveries, expectedFacts）</p><p>依据 02-Supplier-Delivery.xlsx 与 07-Supplier-Response.docx，五笔采购单计划交货 1,200 件、实收 1,050 件，总交期缺口 150 件（PO-002、PO-004、PO-005 各缺 50 件）。其中 PO-005（P-111，S-02）实收 150 件但实际到货日未核实（actualDate 为空，准时状态 Unknown，D-01）。</p>",
+          "order": 1
+        },
+        {
+          "action": "reply",
+          "fromRole": "Operations",
+          "toRoles": [
+            "Supply"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】供应商交期与缺料风险",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Operations | 关联数据：deliveries, expectedFacts）</p><p>收到。Operations 核对排程时不会将 PO-005 默认视为准时到货，也请 Supply 跟进 S-02 交期确认单。</p>",
+          "order": 2
+        },
+        {
+          "action": "reply",
+          "fromRole": "Supply",
+          "toRoles": [
+            "Operations"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】供应商交期与缺料风险",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Supply | 关联数据：deliveries, expectedFacts）</p><p>Supply 已记录：A-02（PO-002 补货确认，目标日 2026-10-16）已确认；但针对 PO-005 的 A-03 仍为 ProposalOnly（未确认责任人与截止日，D-03）。</p>",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "threadName": "T-02 【AB-730 20261015 Automotive】BOM成本变动核对",
+      "emails": [
+        {
+          "action": "send",
+          "fromRole": "Engineering",
+          "toRoles": [
+            "Analytics",
+            "Planner"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "【AB-730 20261015 Automotive】BOM成本变动核对",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Engineering | 关联数据：bom, expectedFacts）</p><p>依据 01-BOM-Cost.xlsx（表格 BOMCost），虚构局部总成 12 项零件（P-101..P-112）基准单台成本合计 2,582 元，现行单台成本合计 2,682 元，净差异 +100 元（单位：CNY，非整车 BOM）。</p>",
+          "order": 1
+        },
+        {
+          "action": "reply",
+          "fromRole": "Analytics",
+          "toRoles": [
+            "Engineering"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】BOM成本变动核对",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Analytics | 关联数据：bom, expectedFacts）</p><p>Analytics 复核完毕：仅 P-101（单台用量 2 件）单价由 500 元调至 550 元（+100 元/台），其余 P-102..P-112 单价未变。</p>",
+          "order": 2
+        },
+        {
+          "action": "reply",
+          "fromRole": "Engineering",
+          "toRoles": [
+            "Analytics"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】BOM成本变动核对",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Engineering | 关联数据：bom, expectedFacts）</p><p>Engineering 确认已登记行动项 A-04（2026-10-18 前完成 P-101 成本变动技术核验）。</p>",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "threadName": "T-03 【AB-730 20261015 Automotive】零件批次质量异常",
+      "emails": [
+        {
+          "action": "send",
+          "fromRole": "Quality",
+          "toRoles": [
+            "Engineering",
+            "Operations"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "【AB-730 20261015 Automotive】零件批次质量异常",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Quality | 关联数据：inspections, expectedFacts）</p><p>依据 03-Quality-Inspection.xlsx 与 06-Quality-Brief.docx，三批独立抽检数据为 Q-001（1000 检 20 不良，2.00%）、Q-002（100 检 10 不良，10.00%）、Q-003（0 检 0 不良，返回 N/A，D-02）。有效抽检合计 1,100 件、不良 30 件，加权不良率 2.73%（D-04）。</p>",
+          "order": 1
+        },
+        {
+          "action": "reply",
+          "fromRole": "Engineering",
+          "toRoles": [
+            "Quality"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】零件批次质量异常",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Engineering | 关联数据：inspections, expectedFacts）</p><p>Engineering 已会同 Quality 启动 Q-002（P-103）异常排查，注意汇总汇报时不得把 2.00% 与 10.00% 简单平均成 6.00%，且 Q-003 不得算作 0%。</p>",
+          "order": 2
+        },
+        {
+          "action": "reply",
+          "fromRole": "Quality",
+          "toRoles": [
+            "Engineering"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】零件批次质量异常",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Quality | 关联数据：inspections, expectedFacts）</p><p>Quality 确认已建立行动项 A-01（来源 Q-002，目标日 2026-10-17），并在 06-Quality-Brief.docx 中注明抽检批次并非五笔采购单普查。</p>",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "threadName": "T-04 【AB-730 20261015 Automotive】生产影响评估",
+      "emails": [
+        {
+          "action": "send",
+          "fromRole": "Operations",
+          "toRoles": [
+            "Planner",
+            "Sponsor"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "【AB-730 20261015 Automotive】生产影响评估",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Operations | 关联数据：production, deliveries）</p><p>依据 04-Production-Impact.xlsx 与 08-Improvement-Meeting.docx，LINE-01（500/450，缺口 50 台）与 LINE-02（400/380，缺口 20 台）合计虚构局部总成产出缺口 70 台。</p>",
+          "order": 1
+        },
+        {
+          "action": "reply",
+          "fromRole": "Planner",
+          "toRoles": [
+            "Operations"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】生产影响评估",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Planner | 关联数据：production, deliveries）</p><p>Planner 提醒：04-Production-Impact.xlsx 的 70 台局部总成缺口与 02-Supplier-Delivery.xlsx 的 150 件零件交期缺口单位不同且无直接因果换算（causalClaimAllowed=false），严禁推论自动停线。</p>",
+          "order": 2
+        },
+        {
+          "action": "reply",
+          "fromRole": "Operations",
+          "toRoles": [
+            "Planner"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】生产影响评估",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Operations | 关联数据：production, deliveries）</p><p>Operations 已登记行动项 A-05（2026-10-16 前完成 LINE-01 影响边界核实），向管理层汇报时将严格区分 70 台总成缺口与 150 件来料缺口。</p>",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "threadName": "T-05 【AB-730 20261015 Automotive】跨部门改善行动确认",
+      "emails": [
+        {
+          "action": "send",
+          "fromRole": "Planner",
+          "toRoles": [
+            "Sponsor",
+            "Quality",
+            "Supply"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "【AB-730 20261015 Automotive】跨部门改善行动确认",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Planner | 关联数据：actions）</p><p>依据 05-Action-Tracker.xlsx 与 08-Improvement-Meeting.docx，目前共汇总 A-01 至 A-06 六项行动：A-01、A-02、A-04、A-05、A-06 五项已确认责任角色与到期日；A-03（来源 PO-005，建议角色 Supply）仍为未确认提案（ownerConfirmed=false，dueDate=null，ProposalOnly，D-03）。</p>",
+          "order": 1
+        },
+        {
+          "action": "reply",
+          "fromRole": "Sponsor",
+          "toRoles": [
+            "Planner"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】跨部门改善行动确认",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Sponsor | 关联数据：actions）</p><p>Sponsor 批示：请严格保留 A-03 为待确认提案状态，在 Supply 正式确认前不得虚构截止日期。</p>",
+          "order": 2
+        },
+        {
+          "action": "reply",
+          "fromRole": "Planner",
+          "toRoles": [
+            "Sponsor"
+          ],
+          "ccRoles": [
+            "Admin"
+          ],
+          "subject": "Re: 【AB-730 20261015 Automotive】跨部门改善行动确认",
+          "bodyHtml": "<p><strong>【AB-730 虚构训练资料】</strong>（角色：Planner | 关联数据：actions）</p><p>Planner 收到，已在 05-Action-Tracker.xlsx 与 08-Improvement-Meeting.docx 同步标注 D-03 风险提示。</p>",
+          "order": 3
+        }
+      ]
+    }
+  ]
+}

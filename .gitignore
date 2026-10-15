@@ -67,3 +67,20 @@ TestResult*/
 # OS-specific
 .DS_Store
 Thumbs.db
+
+# PPTs
+PPT/*
+
+# Local Microsoft Graph credentials (keep config.json.example trackable)
+/.mcp.json
+/seed-data/config.json
+/seed-data/scenarios/*/config.json
+/seed-data/ab730-deployment-manifest.local.json
+
+# Local seeding receipts, downloaded sources and offline test fixtures
+/seed-data/tests/.tmp-*/
+/seed-data/scenarios/*/onedrive-receipt.json
+/seed-data/scenarios/*/sharepoint-runtime.json
+/seed-data/scenarios/*/ab730-deployment-manifest.local.json
+/seed-data/scenarios/*/source/
+/seed-data/scenarios/*/Products.zip
