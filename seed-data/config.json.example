@@ -1,0 +1,35 @@
+{
+  "tenantId": "95fefe1f-7bd4-4086-8baf-36b471226c6d",
+  "clientId": "5022701e-63e7-4e13-967f-949c3574c372",
+  "clientSecret": "",
+  "adminUpn": "admin@moneyyu.com",
+  "demoUserUpn": "admin@moneyyu.com",
+  "teamDisplayName": "20261015-AB-730",
+  "filesSourceDir": "scenarios\\ab730-automotive-20261015\\DEMO-FILE",
+  "roles": {
+    "Admin": {
+      "upn": "admin@moneyyu.com"
+    },
+    "Sponsor": {
+      "upn": "MeganB@moneyyu.com"
+    },
+    "Planner": {
+      "upn": "AdeleV@moneyyu.com"
+    },
+    "Supply": {
+      "upn": "AlexW@moneyyu.com"
+    },
+    "Quality": {
+      "upn": "DebraB@moneyyu.com"
+    },
+    "Operations": {
+      "upn": "GradyA@moneyyu.com"
+    },
+    "Engineering": {
+      "upn": "AllanD@moneyyu.com"
+    },
+    "Analytics": {
+      "upn": "DiegoS@moneyyu.com"
+    }
+  }
+}
