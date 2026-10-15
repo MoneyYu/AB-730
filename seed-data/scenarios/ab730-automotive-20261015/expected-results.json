@@ -1,0 +1,75 @@
+{
+  "scenarioSlug": "ab730-automotive",
+  "courseCode": "AB-730",
+  "deliveryDate": "20261015",
+  "datasetAsOf": "2026-10-14",
+  "locale": "zh-CN",
+  "currency": "CNY",
+  "resources": {
+    "scenarioDirectory": "seed-data\\scenarios\\ab730-automotive-20261015",
+    "oneDriveFolder": "AB730-Automotive-20261015",
+    "teamDisplayName": "20261015-AB-730",
+    "sharePointAlias": "ab730-automotive-20261015",
+    "sharePointDisplayName": "AB-730 - Automotive Knowledge - 20261015",
+    "sharePointLibrary": "DemoKnowledge",
+    "customListCount": 0,
+    "calendarCount": 0,
+    "meetingChatCount": 0
+  },
+  "expectedFacts": {
+    "baseAssemblyCost": 2582,
+    "currentAssemblyCost": 2682,
+    "assemblyCostDelta": 100,
+    "plannedDeliveryPieces": 1200,
+    "receivedDeliveryPieces": 1050,
+    "deliveryGapPieces": 150,
+    "validInspectionPieces": 1100,
+    "defectivePieces": 30,
+    "weightedDefectRatePercentRounded2": "2.73",
+    "productionGapAssemblies": 70,
+    "actionCount": 6,
+    "oneDriveOfficeFileCount": 8,
+    "sharePointDocumentCount": 3,
+    "emailThreadCount": 5,
+    "emailMessageCount": 15,
+    "businessChannelCount": 5,
+    "teamMessageCount": 15
+  },
+  "computedFactIds": {
+    "QualityWeightedRate": "expectedFacts.weightedDefectRatePercentRounded2",
+    "DeliveryGap": "expectedFacts.deliveryGapPieces",
+    "AssemblyCostDelta": "expectedFacts.assemblyCostDelta"
+  },
+  "intentionalAnomalies": [
+    {
+      "id": "D-01",
+      "source": "PO-005",
+      "expected": "Actual arrival date Unknown; not on-time by default"
+    },
+    {
+      "id": "D-02",
+      "source": "Q-003",
+      "expected": "Inspection rate N/A, not zero percent"
+    },
+    {
+      "id": "D-03",
+      "source": "A-03",
+      "expected": "Suggested owner not confirmed; no invented deadline"
+    },
+    {
+      "id": "D-04",
+      "source": "QualityWeightedRate",
+      "expected": "Use 30/1100, not average of batch percentages"
+    }
+  ],
+  "assetSHA256": {
+    "01-BOM-Cost.xlsx": "a81c708ccda16a5b04bb256716454005f31ac11bbb493ec66eae9ecb1986961b",
+    "02-Supplier-Delivery.xlsx": "f1498eba6d4bc67767e14cc2ebb2ed6f9d983947b1b7d5e87616c1182efbfd3a",
+    "03-Quality-Inspection.xlsx": "4d2d63ca592e0b085d3f69ad567377a5e477d6c18df5e28d42909d9719d40eb5",
+    "04-Production-Impact.xlsx": "c32a480f081d1148b5a4973d340e77ee7d82b04091a15364f3ace38dc24b16c2",
+    "05-Action-Tracker.xlsx": "2c9863d6c501e511d56ac1b75989b2624aa749aa808b519e78fe3874076a6529",
+    "06-Quality-Brief.docx": "7a8bd5a857b9200510ced8380192173a88a689dda0a273de85458e3c65a6b904",
+    "07-Supplier-Response.docx": "ec18b883397835f6ac3509a6b56c393b4f8ab76d044d72ca5970e60927d9ab5c",
+    "08-Improvement-Meeting.docx": "cffbb1716fd3a2b306e37fb04d79ebe72ba5b90ac998a1054094047824ae3ca7"
+  }
+}

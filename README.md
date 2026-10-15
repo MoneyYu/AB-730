@@ -130,69 +130,69 @@ Post Course Survey: [https://aka.ms/ab730survey](https://aka.ms/ab730survey)
 ```markmap
 # Transform business workflows with generative AI
 ## M01 - Prepare to use generative AI at work
-### 生成式 AI 與工作任務
-- 提示詞與學習模式：生成不是固定答案
-- Chat／Cowork／Code／Autopilot：依成果選擇
-### 負責任使用與人工把關
+### Generative AI for work tasks
+- Prompts and learned patterns: generation is not a fixed answer
+- Chat / Cowork / Code / Autopilot: choose based on the desired outcome
+### Responsible use and human oversight
 - [Enterprise data protection](https://learn.microsoft.com/en-us/microsoft-365/copilot/enterprise-data-protection)
-- 不正確內容、prompt injection、過度依賴
-- 開啟來源、核對事實、保護敏感資料
+- Inaccurate content, prompt injection, and overreliance
+- Open sources, verify facts, and protect sensitive data
 ## M02 - Explore how Microsoft Copilot Chat works
-### 進入與操作 Chat
-- 工作帳號、保護狀態與對話介面
-- Auto／Quick response／Think deeper
-### Grounding 的來源與邊界
-- 公開網頁、提供的內容、支援的 app context
-- [授權與 Work IQ](https://support.microsoft.com/en-us/microsoft-365-copilot/how-copilot-chat-works-with-and-without-a-microsoft-365-copilot-license)
-- 原有權限不會因 AI 擴大
+### Accessing and using Chat
+- Work accounts, data protection status, and the chat interface
+- Auto / Quick response / Think deeper
+### Grounding sources and boundaries
+- Public web pages, supplied content, and supported app context
+- [Licensing and Work IQ](https://support.microsoft.com/en-us/microsoft-365-copilot/how-copilot-chat-works-with-and-without-a-microsoft-365-copilot-license)
+- AI does not expand existing permissions
 ## M03 - Write effective prompts to achieve optimal results
-### 寫清楚與逐步改善
-- Goal／Context／Source／Expectations
-- 明確範圍、追問修正、核對引用
-### 個人化與重用
-- Memory、custom instructions 與 temporary chat
-- [Prompt Lab：儲存提示詞](https://support.microsoft.com/en-us/microsoft-365-copilot/save-your-favorite-prompts-to-use-again)
-- 分享提示詞不等於分享來源權限
+### Writing clearly and refining iteratively
+- Goal / Context / Source / Expectations
+- Define the scope, refine with follow-up prompts, and check citations
+### Personalization and reuse
+- Memory, custom instructions, and temporary chat
+- [Prompt Lab: saving prompts](https://support.microsoft.com/en-us/microsoft-365-copilot/save-your-favorite-prompts-to-use-again)
+- Sharing a prompt does not grant access to its sources
 ## M04 - Work smarter with Microsoft Copilot Chat
-### 從內容到洞察
-- 摘要、發想、檔案分析
-- 圖表核對數值；生成圖片不是證據
-### 從單次回答到持續工作
-- [Pages：可編輯的持續畫布](https://support.microsoft.com/en-us/microsoft-365-copilot/how-microsoft-365-copilot-pages-works)
-- Agents：特定任務、指示與知識來源
-- 分享前確認對象、權限與費用
+### From content to insights
+- Summarization, brainstorming, and file analysis
+- Verify chart values; generated images are not evidence
+### From one-off answers to ongoing work
+- [Pages: a persistent, editable canvas](https://support.microsoft.com/en-us/microsoft-365-copilot/how-microsoft-365-copilot-pages-works)
+- Agents: specialized tasks, instructions, and knowledge sources
+- Confirm the audience, permissions, and costs before sharing
 ## M05 - Draft and refine business content using Microsoft Copilot
-### 跨 app 的一致內容
-- Word：撰寫、改寫與文字轉表格
-- PowerPoint：依來源組織訊息
-- Outlook：草稿、coaching 與寄送前檢查
-### 深入研究與驗證
-- [Researcher：多來源、結構化研究](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-researcher-in-microsoft-365-copilot)
-- 核對引用、時效、受眾與商務目標
+### Consistent content across apps
+- Word: drafting, rewriting, and converting text to tables
+- PowerPoint: organizing information based on sources
+- Outlook: drafting, coaching, and pre-send review
+### In-depth research and verification
+- [Researcher: structured research across multiple sources](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-researcher-in-microsoft-365-copilot)
+- Check citations, currency, audience fit, and business objectives
 ## M06 - Analyze and visualize data using Microsoft Copilot
-### 在 Excel 裡分析
-- 選擇編輯、計畫或只聊天
-- 趨勢、異常、文字主題與情緒
-- 圖表座標、公式參照與零值檢查
-### 依任務選工具
-- [Analyst：深入調查與分析報告](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-analyst-in-microsoft-365-copilot)
-- Excel／Analyst／Chat：依深度、資料與成果選擇
+### Analyzing data in Excel
+- Choose editing, planning, or chat-only interaction
+- Trends, anomalies, themes in text, and sentiment
+- Check chart axes, formula references, and zero values
+### Choosing tools for the task
+- [Analyst: in-depth investigation and analytical reports](https://support.microsoft.com/en-us/microsoft-365-copilot/get-started-with-analyst-in-microsoft-365-copilot)
+- Excel / Analyst / Chat: choose based on depth, data, and desired outcomes
 ## M07 - Manage meetings and collaboration using Microsoft Copilot
-### 會前、會中與會後
-- 議程、會議洞察、recap 與後續草稿
-- [Facilitator：共享筆記](https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings) vs 私人 Copilot
-- 建議不等於已確認的負責人與期限
-### 共同計畫與限定來源
-- Pages：共編專案畫布
-- [Notebooks：整理參考來源](https://support.microsoft.com/en-us/microsoft-365-copilot/how-microsoft-365-copilot-notebooks-works)
+### Before, during, and after meetings
+- Agendas, meeting insights, recaps, and follow-up drafts
+- [Facilitator: shared notes](https://support.microsoft.com/en-us/teams/copilot/facilitator-in-microsoft-teams-meetings) vs private Copilot assistance
+- Suggestions are not confirmed action owners or deadlines
+### Shared planning with scoped sources
+- Pages: a collaborative project canvas
+- [Notebooks: organizing reference sources](https://support.microsoft.com/en-us/microsoft-365-copilot/how-microsoft-365-copilot-notebooks-works)
 ## M08 - Get more done with Copilot Cowork
-### 委派多步驟成果
-- Chat 是對話；agents 是專用協助；Cowork 是任務委派
-- 成果、情境、交付物與範圍
-- 使用量與授權條件
-### 持續掌握與重複執行
-- [計畫、進度、核准與結果](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
-- Automation 決定何時；custom skills 決定如何
+### Delegating multi-step work
+- Chat is conversational; agents provide specialized assistance; Cowork enables task delegation
+- Outcomes, context, deliverables, and scope
+- Usage and licensing requirements
+### Staying in control and making work repeatable
+- [Plans, progress, approvals, and results](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/use-cowork)
+- Automation determines when; custom skills determine how
 ```
 
 ## Exam

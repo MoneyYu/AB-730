@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "isPlanOnly": false,
+  "courseCode": "AB-730",
+  "scenarioSlug": "ab730-automotive",
+  "deliveryDate": "20261015",
+  "datasetAsOf": "2026-10-14",
+  "locale": "zh-CN",
+  "currency": "CNY",
+  "seed": 730,
+  "allDataFictional": true,
+  "roleKeys": ["Admin", "Sponsor", "Planner", "Supply", "Quality", "Operations", "Engineering", "Analytics"],
+  "adminIsBusinessRole": false,
+  "computedFactIds": {
+    "QualityWeightedRate": "expectedFacts.weightedDefectRatePercentRounded2",
+    "DeliveryGap": "expectedFacts.deliveryGapPieces",
+    "AssemblyCostDelta": "expectedFacts.assemblyCostDelta"
+  },
+  "resources": {
+    "scenarioDirectory": "seed-data\\scenarios\\ab730-automotive-20261015",
+    "oneDriveFolder": "AB730-Automotive-20261015",
+    "teamDisplayName": "20261015-AB-730",
+    "sharePointAlias": "ab730-automotive-20261015",
+    "sharePointDisplayName": "AB-730 - Automotive Knowledge - 20261015",
+    "sharePointLibrary": "DemoKnowledge",
+    "customListCount": 0,
+    "calendarCount": 0,
+    "meetingChatCount": 0
+  },
+  "officeFiles": [
+    {"name": "01-BOM-Cost.xlsx", "table": "BOMCost", "source": "bom"},
+    {"name": "02-Supplier-Delivery.xlsx", "table": "SupplierDelivery", "source": "deliveries"},
+    {"name": "03-Quality-Inspection.xlsx", "table": "QualityInspection", "source": "inspections"},
+    {"name": "04-Production-Impact.xlsx", "table": "ProductionImpact", "source": "production"},
+    {"name": "05-Action-Tracker.xlsx", "table": "ImprovementActions", "source": "actions"},
+    {"name": "06-Quality-Brief.docx", "sources": ["inspections", "expectedFacts", "actions"]},
+    {"name": "07-Supplier-Response.docx", "sources": ["deliveries", "expectedFacts"]},
+    {"name": "08-Improvement-Meeting.docx", "sources": ["bom", "deliveries", "inspections", "production", "actions"]}
+  ],
+  "sharePointDocuments": ["06-Quality-Brief.docx", "07-Supplier-Response.docx", "08-Improvement-Meeting.docx"],
+  "bom": {
+    "unit": "CNY per fictional subassembly; not a complete vehicle BOM",
+    "columns": ["partId", "quantityPerAssembly", "baseUnitCost", "currentUnitCost"],
+    "rows": [
+      ["P-101", 2, 500, 550],
+      ["P-102", 4, 20, 20],
+      ["P-103", 1, 150, 150],
+      ["P-104", 2, 80, 80],
+      ["P-105", 6, 5, 5],
+      ["P-106", 12, 1, 1],
+      ["P-107", 2, 15, 15],
+      ["P-108", 1, 400, 400],
+      ["P-109", 1, 200, 200],
+      ["P-110", 1, 120, 120],
+      ["P-111", 1, 300, 300],
+      ["P-112", 1, 100, 100]
+    ]
+  },
+  "deliveries": {
+    "unit": "pieces; totals are not vehicle output",
+    "columns": ["poLineId", "partId", "supplierId", "promisedDate", "actualDate", "plannedQuantity", "receivedQuantity"],
+    "rows": [
+      ["PO-001", "P-101", "S-01", "2026-10-10", "2026-10-10", 300, 300],
+      ["PO-002", "P-103", "S-02", "2026-10-11", "2026-10-13", 300, 250],
+      ["PO-003", "P-104", "S-03", "2026-10-12", "2026-10-12", 200, 200],
+      ["PO-004", "P-108", "S-04", "2026-10-13", "2026-10-14", 200, 150],
+      ["PO-005", "P-111", "S-02", "2026-10-14", null, 200, 150]
+    ],
+    "missingActualDateMeaning": "Arrival date not verified despite a recorded received quantity; on-time status Unknown"
+  },
+  "inspections": {
+    "scope": "Fictional production/inventory sampling, not a census of the five delivery rows",
+    "columns": ["batchId", "partId", "inspectedQuantity", "defectiveQuantity"],
+    "rows": [
+      ["Q-001", "P-101", 1000, 20],
+      ["Q-002", "P-103", 100, 10],
+      ["Q-003", "P-108", 0, 0]
+    ],
+    "zeroDenominatorResult": "N/A"
+  },
+  "production": {
+    "unit": "fictional subassemblies",
+    "columns": ["lineId", "plannedQuantity", "actualQuantity"],
+    "rows": [["LINE-01", 500, 450], ["LINE-02", 400, 380]],
+    "causalClaimAllowed": false
+  },
+  "actions": [
+    {"id": "A-01", "source": "Q-002", "ownerRole": "Quality", "ownerConfirmed": true, "dueDate": "2026-10-17", "status": "PendingInvestigation"},
+    {"id": "A-02", "source": "PO-002", "ownerRole": "Supply", "ownerConfirmed": true, "dueDate": "2026-10-16", "status": "PendingSupplierConfirmation"},
+    {"id": "A-03", "source": "PO-005", "ownerRole": "Supply", "ownerConfirmed": false, "dueDate": null, "status": "ProposalOnly"},
+    {"id": "A-04", "source": "P-101", "ownerRole": "Engineering", "ownerConfirmed": true, "dueDate": "2026-10-18", "status": "PendingCostVerification"},
+    {"id": "A-05", "source": "LINE-01", "ownerRole": "Operations", "ownerConfirmed": true, "dueDate": "2026-10-16", "status": "PendingImpactVerification"},
+    {"id": "A-06", "source": "QualityWeightedRate", "ownerRole": "Analytics", "ownerConfirmed": true, "dueDate": "2026-10-16", "status": "PendingReport"}
+  ],
+  "expectedFacts": {
+    "baseAssemblyCost": 2582,
+    "currentAssemblyCost": 2682,
+    "assemblyCostDelta": 100,
+    "plannedDeliveryPieces": 1200,
+    "receivedDeliveryPieces": 1050,
+    "deliveryGapPieces": 150,
+    "validInspectionPieces": 1100,
+    "defectivePieces": 30,
+    "weightedDefectRatePercentRounded2": "2.73",
+    "productionGapAssemblies": 70,
+    "actionCount": 6,
+    "oneDriveOfficeFileCount": 8,
+    "sharePointDocumentCount": 3,
+    "emailThreadCount": 5,
+    "emailMessageCount": 15,
+    "businessChannelCount": 5,
+    "teamMessageCount": 15
+  },
+  "emailThreads": [
+    {"subject": "【AB-730 20261015 Automotive】供应商交期与缺料风险", "authors": ["Supply", "Operations", "Supply"], "initialToRoles": ["Operations", "Planner"], "replyToRoles": [["Supply"], ["Operations"]], "sources": ["deliveries", "expectedFacts"]},
+    {"subject": "【AB-730 20261015 Automotive】BOM成本变动核对", "authors": ["Engineering", "Analytics", "Engineering"], "initialToRoles": ["Analytics", "Planner"], "replyToRoles": [["Engineering"], ["Analytics"]], "sources": ["bom", "expectedFacts"]},
+    {"subject": "【AB-730 20261015 Automotive】零件批次质量异常", "authors": ["Quality", "Engineering", "Quality"], "initialToRoles": ["Engineering", "Operations"], "replyToRoles": [["Quality"], ["Engineering"]], "sources": ["inspections", "expectedFacts"]},
+    {"subject": "【AB-730 20261015 Automotive】生产影响评估", "authors": ["Operations", "Planner", "Operations"], "initialToRoles": ["Planner", "Sponsor"], "replyToRoles": [["Operations"], ["Planner"]], "sources": ["production", "deliveries"]},
+    {"subject": "【AB-730 20261015 Automotive】跨部门改善行动确认", "authors": ["Planner", "Sponsor", "Planner"], "initialToRoles": ["Sponsor", "Quality", "Supply"], "replyToRoles": [["Planner"], ["Sponsor"]], "sources": ["actions"]}
+  ],
+  "emailRules": {"ccEveryMessage": ["Admin"], "externalRecipientsAllowed": false, "actualExecutionTimeOnly": true},
+  "teamChannels": [
+    {"name": "供应链交期", "topAuthors": ["Supply", "Supply"], "firstPostReplyAuthor": "Planner", "sources": ["deliveries"]},
+    {"name": "BOM与成本", "topAuthors": ["Engineering", "Engineering"], "firstPostReplyAuthor": "Analytics", "sources": ["bom"]},
+    {"name": "零件质量", "topAuthors": ["Quality", "Quality"], "firstPostReplyAuthor": "Engineering", "sources": ["inspections"]},
+    {"name": "生产影响", "topAuthors": ["Operations", "Operations"], "firstPostReplyAuthor": "Quality", "sources": ["production"]},
+    {"name": "改善行动", "topAuthors": ["Planner", "Planner"], "firstPostReplyAuthor": "Sponsor", "sources": ["actions"]}
+  ],
+  "teamStoryTimes": {"dayOffset": -1, "firstPostTime": "10:00", "replyTime": "10:15", "secondPostTime": "11:00"},
+  "intentionalAnomalies": [
+    {"id": "D-01", "source": "PO-005", "expected": "Actual arrival date Unknown; not on-time by default"},
+    {"id": "D-02", "source": "Q-003", "expected": "Inspection rate N/A, not zero percent"},
+    {"id": "D-03", "source": "A-03", "expected": "Suggested owner not confirmed; no invented deadline"},
+    {"id": "D-04", "source": "QualityWeightedRate", "expected": "Use 30/1100, not average of batch percentages"}
+  ],
+  "cloudWriteApproved": true
+}

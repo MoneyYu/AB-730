@@ -1,0 +1,44 @@
+{
+  "tenantId": "<tenant-guid>",
+  "clientId": "<app-client-id>",
+  "clientSecret": "<local-secret>",
+  "adminUpn": "admin@example.invalid",
+  "demoUserUpn": "admin@example.invalid",
+  "teamDisplayName": "20261015-AB-730",
+  "teamDescription": "AB-730 dated training demo",
+  "filesSourceDir": "scenarios\\ab730-automotive-20261015\\DEMO-FILE",
+  "roles": {
+    "Admin": {
+      "upn": "admin@example.invalid",
+      "displayName": "Admin"
+    },
+    "Sponsor": {
+      "upn": "sponsor@example.invalid",
+      "displayName": "Sponsor"
+    },
+    "Planner": {
+      "upn": "planner@example.invalid",
+      "displayName": "Planner"
+    },
+    "Supply": {
+      "upn": "supply@example.invalid",
+      "displayName": "Supply"
+    },
+    "Quality": {
+      "upn": "quality@example.invalid",
+      "displayName": "Quality"
+    },
+    "Operations": {
+      "upn": "operations@example.invalid",
+      "displayName": "Operations"
+    },
+    "Engineering": {
+      "upn": "engineering@example.invalid",
+      "displayName": "Engineering"
+    },
+    "Analytics": {
+      "upn": "analytics@example.invalid",
+      "displayName": "Analytics"
+    }
+  }
+}

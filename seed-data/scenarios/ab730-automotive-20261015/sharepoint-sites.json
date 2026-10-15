@@ -1,0 +1,41 @@
+{
+  "sites": [
+    {
+      "alias": "ab730-automotive-20261015",
+      "displayName": "AB-730 - Automotive Knowledge - 20261015",
+      "description": "AB-730 Automotive fictional training knowledge source (zh-CN).",
+      "visibility": "Private",
+      "owners": [
+        "Admin"
+      ],
+      "members": [
+        "Sponsor",
+        "Planner",
+        "Supply",
+        "Quality",
+        "Operations",
+        "Engineering",
+        "Analytics"
+      ],
+      "documentLibrary": "DemoKnowledge",
+      "documents": [
+        {
+          "sourceFilename": "06-Quality-Brief.docx",
+          "targetFilename": "06-Quality-Brief.docx",
+          "libraryName": "DemoKnowledge"
+        },
+        {
+          "sourceFilename": "07-Supplier-Response.docx",
+          "targetFilename": "07-Supplier-Response.docx",
+          "libraryName": "DemoKnowledge"
+        },
+        {
+          "sourceFilename": "08-Improvement-Meeting.docx",
+          "targetFilename": "08-Improvement-Meeting.docx",
+          "libraryName": "DemoKnowledge"
+        }
+      ],
+      "lists": []
+    }
+  ]
+}

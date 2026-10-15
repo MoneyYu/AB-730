@@ -1,0 +1,151 @@
+{
+  "teamDisplayName": "20261015-AB-730",
+  "teamDescription": "AB-730 dated training demo",
+  "channels": [
+    {
+      "channelName": "供应链交期",
+      "channelDescription": "AB-730 供应链交期（虚构汽车供应链训练频道）",
+      "messages": [
+        {
+          "fromRole": "Supply",
+          "bodyHtml": "<p><strong>[Supply]</strong> 【02-Supplier-Delivery.xlsx / 07-Supplier-Response.docx】五笔采购单计划 1,200 件、实收 1,050 件，交期缺口 150 件；PO-005（P-111，S-02）实收 150 件但实际到货日未核实（actualDate 为空，状态 Unknown，D-01）。</p>",
+          "mentions": [],
+          "order": 1,
+          "createdDateTime": "2026-10-14T10:00:00+08:00",
+          "replies": [
+            {
+              "fromRole": "Planner",
+              "bodyHtml": "<p><strong>[Planner]</strong> 收到。Planner 汇总周报时会将 PO-005 准时状态列为 Unknown，绝不默认归入准时交货。</p>",
+              "mentions": [],
+              "createdDateTime": "2026-10-14T10:15:00+08:00"
+            }
+          ]
+        },
+        {
+          "fromRole": "Supply",
+          "bodyHtml": "<p><strong>[Supply]</strong> 补充：PO-002 已建立 A-02 跟进（2026-10-16 到期），PO-005 对应的 A-03 仍处于 ProposalOnly（未确认，D-03）。</p>",
+          "mentions": [],
+          "order": 2,
+          "createdDateTime": "2026-10-14T11:00:00+08:00",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "channelName": "BOM与成本",
+      "channelDescription": "AB-730 BOM与成本（虚构汽车供应链训练频道）",
+      "messages": [
+        {
+          "fromRole": "Engineering",
+          "bodyHtml": "<p><strong>[Engineering]</strong> 【01-BOM-Cost.xlsx】虚构局部总成 12 项零件（P-101..P-112）基准成本 2,582 元、现行成本 2,682 元，单台净增 +100 元（CNY，非整车 BOM）。</p>",
+          "mentions": [],
+          "order": 1,
+          "createdDateTime": "2026-10-14T10:00:00+08:00",
+          "replies": [
+            {
+              "fromRole": "Analytics",
+              "bodyHtml": "<p><strong>[Analytics]</strong> Analytics 已核对：仅 P-101（用量 2 件）单价由 500 元升至 550 元（+100 元），其余 11 项零件无变化。</p>",
+              "mentions": [],
+              "createdDateTime": "2026-10-14T10:15:00+08:00"
+            }
+          ]
+        },
+        {
+          "fromRole": "Engineering",
+          "bodyHtml": "<p><strong>[Engineering]</strong> Engineering 已关联行动项 A-04（2026-10-18 到期），完成 P-101 价格变动工程签证复核。</p>",
+          "mentions": [],
+          "order": 2,
+          "createdDateTime": "2026-10-14T11:00:00+08:00",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "channelName": "零件质量",
+      "channelDescription": "AB-730 零件质量（虚构汽车供应链训练频道）",
+      "messages": [
+        {
+          "fromRole": "Quality",
+          "bodyHtml": "<p><strong>[Quality]</strong> 【03-Quality-Inspection.xlsx / 06-Quality-Brief.docx】独立抽检批次 Q-001（1000/20，2.00%）、Q-002（100/10，10.00%）、Q-003（0/0，N/A，D-02）；有效样本 1,100 件、不良 30 件，加权不良率 2.73%（D-04）。</p>",
+          "mentions": [],
+          "order": 1,
+          "createdDateTime": "2026-10-14T10:00:00+08:00",
+          "replies": [
+            {
+              "fromRole": "Engineering",
+              "bodyHtml": "<p><strong>[Engineering]</strong> Engineering 确认：Q-003 抽检分母为 0 必须保持 N/A，且总不良率按 30/1100=2.73% 计算，不采用简单算术平均。</p>",
+              "mentions": [],
+              "createdDateTime": "2026-10-14T10:15:00+08:00"
+            }
+          ]
+        },
+        {
+          "fromRole": "Quality",
+          "bodyHtml": "<p><strong>[Quality]</strong> Quality 已将 Q-002 异常纳入行动项 A-01（2026-10-17 到期），并由 Analytics 在 A-06 中输出加权口径报告。</p>",
+          "mentions": [],
+          "order": 2,
+          "createdDateTime": "2026-10-14T11:00:00+08:00",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "channelName": "生产影响",
+      "channelDescription": "AB-730 生产影响（虚构汽车供应链训练频道）",
+      "messages": [
+        {
+          "fromRole": "Operations",
+          "bodyHtml": "<p><strong>[Operations]</strong> 【04-Production-Impact.xlsx】LINE-01（计划 500/实际 450，缺口 50）与 LINE-02（计划 400/实际 380，缺口 20）合计虚构局部总成缺口 70 台。</p>",
+          "mentions": [],
+          "order": 1,
+          "createdDateTime": "2026-10-14T10:00:00+08:00",
+          "replies": [
+            {
+              "fromRole": "Quality",
+              "bodyHtml": "<p><strong>[Quality]</strong> Quality 会签：70 台局部总成缺口与 150 件采购交期缺口单位不同且无直接因果映射（causalClaimAllowed=false）。</p>",
+              "mentions": [],
+              "createdDateTime": "2026-10-14T10:15:00+08:00"
+            }
+          ]
+        },
+        {
+          "fromRole": "Operations",
+          "bodyHtml": "<p><strong>[Operations]</strong> Operations 已登记 A-05（2026-10-16 到期），汇报材料中严禁把 70 台产出缺口直接归因于 150 件交期缺口或自动推论停线。</p>",
+          "mentions": [],
+          "order": 2,
+          "createdDateTime": "2026-10-14T11:00:00+08:00",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "channelName": "改善行动",
+      "channelDescription": "AB-730 改善行动（虚构汽车供应链训练频道）",
+      "messages": [
+        {
+          "fromRole": "Planner",
+          "bodyHtml": "<p><strong>[Planner]</strong> 【05-Action-Tracker.xlsx / 08-Improvement-Meeting.docx】改善行动共 6 项（A-01..A-06），其中 A-03（来源 PO-005，建议角色 Supply）未确认责任人且无截止日（ProposalOnly，D-03）。</p>",
+          "mentions": [],
+          "order": 1,
+          "createdDateTime": "2026-10-14T10:00:00+08:00",
+          "replies": [
+            {
+              "fromRole": "Sponsor",
+              "bodyHtml": "<p><strong>[Sponsor]</strong> Sponsor 确认：汇报必须区分已确认行动（A-01、A-02、A-04、A-05、A-06）与未确认提案（A-03），不得为 A-03 编造到期日。</p>",
+              "mentions": [],
+              "createdDateTime": "2026-10-14T10:15:00+08:00"
+            }
+          ]
+        },
+        {
+          "fromRole": "Planner",
+          "bodyHtml": "<p><strong>[Planner]</strong> Planner 已完成全部五张工作簿与三份 Word 纪要的交叉核对，供管理层审阅。</p>",
+          "mentions": [],
+          "order": 2,
+          "createdDateTime": "2026-10-14T11:00:00+08:00",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}
